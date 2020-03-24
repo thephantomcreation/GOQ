@@ -3,6 +3,140 @@
 {% block content %}
 
 	<div class="header">
+			<div class="header-row row">
+				<div class="col-lg-4">
+					<h1 class="section_title__header">Get <br> Old <br> Questions</h1>
+				</div>
+				<div class="col-lg-8">
+					<div class="card">
+						<h2 class="section_title__header-card">Search for questions....</h2>
+							<div class="container">
+						        <form action="#" method="post" novalidate="novalidate">
+						            <div class="row">
+						                <div class="col-lg-12">
+						                    <div class="row">
+						                        <div class="col-lg-5 col-md-3 col-sm-12 p-0">
+						                            <input type="text" class="form-control search-slt" placeholder="Search questions...">
+						                        </div>
+						                        
+						                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+						                            <select class="form-control search-slt" id="exampleFormControlSelect1">
+						                                <option>Select Faculty</option>
+						                                <option>CSIT</option>
+						                                <option>BIT</option>
+						                                <option>BBA</option>
+						                                <option>BBS</option>
+						                                <option>BSW</option>
+						                                <option>SE</option>
+						                            </select>
+						                        </div>
+						                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+						                            <button type="button" class="btn  wrn-btn">Search</button>
+						                        </div>
+						                    </div>
+						                </div>
+						            </div>
+						        </form>
+						    </div>
+
+						    <div class="container">
+						    	<div class="header_svg row">
+						    		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						    			<img class="header_card_img" src="{% static 'core/img/header_card_1.svg' %}">
+						    		</div>
+						    		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						    			<img class="header_card_img" src="{% static 'core/img/header_card_2.svg' %}">
+						    		</div>
+						    		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						    			<img class="header_card_img" src="{% static 'core/img/header_card_3.svg' %}">
+						    		</div>
+						    	</div>
+						    </div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="quicklinks">
+			<div class="container">
+				<div class="qlink-row row">
+					<div class="col">
+						<div class="card" id="quicklinks_card">
+							<h2 class="section_title__quicklinks-card">Some quick links</h2>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<h3 class="items_quicklinks_header">Bachelors</h3>
+
+									<ul class="quicklink_items">
+										<li>
+											<a href="#">CSIT </a>
+										</li>
+										<li>
+											<a href="#"> BBS </a>
+										</li>
+										<li>
+											<a href="#"> BBA </a>
+										</li>
+										<li>
+											<a href="#"> BSW </a>
+										</li>
+									</ul>
+
+								</div>
+								<div class=" col-lg-4 col-md-4 col-sm-12">
+									<h3 class="items_quicklinks_header">Plus 2</h3>
+
+									<ul class="quicklink_items">
+										<li>
+											<a href="#">11 - Science </a>
+										</li>
+										<li>
+											<a href="#">11 - Management </a>
+										</li>
+										<li>
+											<a href="#">12 - Science </a>
+										</li>
+										<li>
+											<a href="#">12 - Management </a>
+										</li>
+									</ul>
+
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<h3 class="items_quicklinks_header">SEE</h3>
+
+									<ul class="quicklink_items">
+										<li>
+											<a href="#">Science </a>
+										</li>
+										<li>
+											<a href="#">Social Studies </a>
+										</li>
+										<li>
+											<a href="#">Maths </a>
+										</li>
+										<li>
+											<a href="#">Nepali  </a>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+<!--
+
+	<div class="header">
 			<div class="row">
 				<div class="col-lg-4">
 					<h1 class="section_title__header">Get <br> Old <br> Questions</h1>
@@ -59,5 +193,77 @@
 		</div>
 
 
+		<div class="quicklinks">
+			<div class="container">
+				<div class="qlink-row row">
+					<div class="col">
+						<div class="card" id="quicklinks_card">
+							<h2 class="section_title__quicklinks-card">Some quick links</h2>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<h3 class="items_quicklinks_header">Bachelors</h3>
+
+									<ul class="quicklink_items">
+										<li>
+											<a href="#">CSIT </a>
+										</li>
+										<li>
+											<a href="#"> BBS </a>
+										</li>
+										<li>
+											<a href="#"> BBA </a>
+										</li>
+										<li>
+											<a href="#"> BSW </a>
+										</li>
+									</ul>
+
+								</div>
+								<div class=" col-lg-4 col-md-4 col-sm-12">
+									<h3 class="items_quicklinks_header">Plus 2</h3>
+
+									<ul class="quicklink_items">
+										<li>
+											<a href="#">11 - Science </a>
+										</li>
+										<li>
+											<a href="#">11 - Management </a>
+										</li>
+										<li>
+											<a href="#">12 - Science </a>
+										</li>
+										<li>
+											<a href="#">12 - Management </a>
+										</li>
+									</ul>
+
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<h3 class="items_quicklinks_header">SEE</h3>
+
+									<ul class="quicklink_items">
+										<li>
+											<a href="#">Science </a>
+										</li>
+										<li>
+											<a href="#">Social Studies </a>
+										</li>
+										<li>
+											<a href="#">Maths </a>
+										</li>
+										<li>
+											<a href="#">Nepali  </a>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+-->
 
 {% endblock %}
