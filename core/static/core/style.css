@@ -309,3 +309,12 @@ ul li a{
 .footer__link:hover {
     text-decoration: underline;
 }
+
+.sem-list p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sem-list p a:hover{
+    color: #008080;
+}
