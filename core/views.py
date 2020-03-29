@@ -8,3 +8,6 @@ def semester(request):
 
 def questions(request):
 	return render(request,'core/questions.html')
+
+def search_results(request):
+	return render(request, 'core/search_results.html')
