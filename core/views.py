@@ -11,3 +11,6 @@ def questions(request):
 
 def search_results(request):
 	return render(request, 'core/search_results.html')
+
+def contact_us(request):
+	return render(request, 'core/contact_us.html')
