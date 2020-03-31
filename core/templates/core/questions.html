@@ -8,19 +8,17 @@
 </head>
 <body>
 
-
 	<div class="container px-lg-5" style="margin-top: 65px">
+		
 		{% if not subjects %}
 		  <h3> No files at the moment </h3>
 		  <h4> Please come back afer some time</h4>
 		{% endif %}
 	
-
     </div>
     		<table class="table align-middlel">
     			{% for question in subjects %}
     				<tr style="width">
-    					
 
     						<td style="color: blue; "><a href="" style="display: inline-block;">{{ question.year }} - {{ question.subjects }}</a></td>
 							<td>

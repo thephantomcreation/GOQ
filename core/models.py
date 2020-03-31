@@ -45,11 +45,22 @@ plus_two_choices = [
     ('English','English'),
     ('Bio','Bio'),
 ]
+bachelor_choices = [
+    ('CSIT','CSIT'),
+    ('BIM','BIM'),
+    ('BHM','BHM'),
+    ('BCA', 'BCA'),
+    ('BBA','BBA')
+]
+
 # class Faculty(models.Model):
 #     level = models.CharField(max_length=15,choices=level_choices)
 #     faculty = models.CharField(max_length=30, blank=True)
 #     def __str__(self):
 #        return self.faculty
+
+
+    
 # class YearOrSemester(models.Model):
 #     faculty = models.ForeignKey(Faculty, on_delete=models.CASCADE)
 #     year = models.CharField(max_length=15, choices=year_choices, blank=True)
@@ -96,3 +107,17 @@ class PlusTwo(models.Model):
 
     def __str__(self):
         return self.subjects
+
+
+class Bachelors(models.Model):
+    bachelors_year = models.CharField(max_length=50, choices=year_choices)
+    question_year = models.CharField(max_length=100)
+    faculty = models.CharField(max_length=50, choices=bachelor_choices)
+    semester = models.CharField(max_length=50,choices=sem_choices)
+    subjects = models.CharField(max_length=100)
+    file = models.FileField()
+
+
+    def __str__(self):
+        return '%s %s %s' % (self.faculty, self.subjects, self.question_year)
+    

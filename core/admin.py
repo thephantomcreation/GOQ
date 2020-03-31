@@ -11,5 +11,6 @@ from core.models import *
 admin.site.register(See)
 admin.site.register(Years)
 admin.site.register(PlusTwo)
+admin.site.register(Bachelors)
 
 
